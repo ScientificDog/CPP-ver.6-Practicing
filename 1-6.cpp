@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-double liye(double ly);
+void liye(double ly);
 
 int main()
 {
@@ -11,12 +11,10 @@ int main()
 	return 0;
 }
 
-double liye(double ly){
-//特定函数调用cout需要在前面加上std::，或是using语句	
+void liye(double ly){	
 	double au;
 	au = ly * 63240;
-	std::cout << ly << " light years = "
-		<< au << " astronomical units"
-		<< endl;
-	return au;
+	cout << ly << " light years = "
+	     << au << " astronomical units"
+	     << endl;
 }
